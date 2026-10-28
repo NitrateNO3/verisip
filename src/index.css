@@ -1,0 +1,47 @@
+/* Global tokens + reset. Each section has its own stylesheet in ./styles */
+:root {
+  --night: #0d0c0b;
+  --paper: #f3eee4;
+  --paper-2: #e9e2d3;
+  --ink: #1b1916;
+  --muted: #6b655b;
+  --sodium: #ff8a1e;
+  --sodium-soft: #ffb15c;
+  --red: #d7322b;
+  --green: #1f8a4c;
+  --highway: #0b6b3a;
+  --gov-blue: #1f3a68;
+
+  --display: 'Anton', Impact, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --hand: 'Caveat', cursive;
+  --hindi: 'Tiro Devanagari Hindi', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; overflow-x: clip; }
+main { overflow-x: clip; }
+body {
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+.container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.hindi { font-family: var(--hindi); }
+.mono { font-family: var(--mono); }
+
+@media (max-width: 640px) {
+  .container { padding: 0 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

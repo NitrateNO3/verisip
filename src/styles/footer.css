@@ -1,0 +1,8 @@
+.foot { background: var(--night); color: #8e8678; padding: 70px 0 30px; font-size: 14px; }
+.foot-warning { border: 1px solid #4a2320; background: rgba(215,50,43,.08); color: #f0a39e; padding: 20px 24px; display: grid; gap: 4px; }
+.foot-warning .hindi { font-size: 18px; color: #f6c3bf; }
+.foot-row { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-top: 50px; align-items: end; }
+.foot-big { font-family: var(--display); font-size: clamp(60px, 12vw, 170px); line-height: .85; color: #2a2723; letter-spacing: .01em; }
+.foot-links { display: grid; gap: 8px; text-align: right; }
+.foot-links a:hover { color: var(--paper); }
+.foot-bottom { margin-top: 30px; padding-top: 20px; border-top: 1px solid #2a2723; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 12px; font-family: var(--mono); }
